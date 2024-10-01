@@ -1,0 +1,266 @@
+
+/*  G E N E R A L  */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.page-width {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a:link {
+  color: #efa69d;
+}
+
+a:hover {
+  color: #e9877b;
+}
+
+/*  H E A D E R  */
+
+.header {
+  background-image: url("../img/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.header-heading {
+  max-width: 960px;
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+  text-align: right;
+  color: white;
+  margin-bottom: 30px;
+  line-height: normal;
+}
+
+h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: normal;
+}
+
+/*  A B O U T - U S  */
+
+.about-us {    
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 30px;
+}
+
+.about-us-item {
+  flex: 0 0 calc(100% / 2 - 30px); 
+}
+
+.about-us-item-picture {
+  max-width: 100%;
+}
+
+/*  W H A T - W E - D O  */
+
+.what-we-do {
+  background-color: #33292a;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem 3rem 2rem;
+}
+
+.what-we-do-icons {
+  margin: 4rem 0 2rem 0;
+}
+
+.what-we-do-icons img {
+  width: 100%;    
+  max-width: 80px;
+  filter: invert(100%);
+}
+
+/*  G A L L E R Y  */
+
+.gallery {
+  padding: 2rem 0;
+}
+
+.gallery-picture {
+  margin: 10px;
+}
+
+.gallery-picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+.gallery-picture:nth-child(5) {   
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+/*  W H E R E - W A N T - G O  */
+
+.where-want-go {
+  background-color: #644b4f;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.where-want-go-info:nth-child(1) {   
+  flex-basis: 45%;
+}
+
+.where-want-go-info:nth-child(2) {   
+  flex-basis: 60%;
+}
+
+.where-want-go-info h2 {
+  margin: 0;
+}
+
+.where-want-go-button {
+  padding: 10px 30px;
+  margin: 2rem 0rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/*  R E V I E W S  */
+
+.reviews {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 2rem 0;
+}
+
+.reviews-info {
+  margin: 0 25%;
+}
+
+.reviews-personal-texts p {
+  margin: 20px 40px;
+}
+
+.reviews-personal-text {
+  margin-top: 55px;
+}
+
+.reviews-personal-text img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/*  P H O T O S  */
+
+.photos-picture img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  vertical-align: bottom;
+}
+
+/*  F O O T E R  */
+
+.footer {
+  background-color: #333333;
+  color: white;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*  M E D I A - Q U E R I E S  */
+
+@media (min-width: 768px) {
+  h1 {
+      font-size: 80px;
+  }
+
+  h2 {
+      font-size: 60px;
+  }
+
+  h3 {
+      font-size: 35px;
+  }
+
+  .about-us {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .what-we-do-icons {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px 10px;
+  }
+
+  .gallery-picture {
+      width: calc(100% / 3 - 10px);
+      margin: 0;
+  }
+
+  .gallery-picture:nth-child(5) {
+      padding: 0;
+  }
+
+  .where-want-go-holder {
+      display: flex;
+  }
+
+  .where-want-go-info {
+      margin-left: 2rem;
+  }
+
+  .reviews-personal-texts {
+      display: flex;
+  }
+
+  .photos {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .photos-picture {
+      width: 50%;
+  }
+}
+
+@media (max-width: 1040px) {
+  h1 {
+      margin-right: 30px;
+  }
+}
